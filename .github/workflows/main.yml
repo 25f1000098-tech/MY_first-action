@@ -1,0 +1,18 @@
+# A simple name for your workflow
+name: My First Workflow
+
+# This line allows you to run the workflow manually from the Actions tab
+on:
+  workflow_dispatch:
+
+# Defines the actual work to be done
+jobs:
+  greeting_job:
+    # The type of virtual machine to run the job on
+    runs-on: ubuntu-latest
+
+    # A sequence of tasks to be executed
+    steps:
+      # This is the required step with your email as the name
+      - name: 25f1000098@ds.study.iitm.ac.in
+        run: echo "Hello from my first GitHub Action!"
