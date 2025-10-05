@@ -1,11 +1,16 @@
-name: Simple Greeting Workflow
+name: My First Action Workflow
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-  my_job:
+  test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: 25f1000098@ds.study.iitm.ac.in
-        run: echo "Hello World!"
+        run: echo "Hello, world!"
