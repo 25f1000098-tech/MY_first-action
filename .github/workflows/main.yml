@@ -15,4 +15,4 @@ jobs:
     steps:
       # This is the required step with your email as the name
       - name: 25f1000098@ds.study.iitm.ac.in
-        run: echo "Hello from my first GitHub Action!"
+        run: echo "Hello, world!"
